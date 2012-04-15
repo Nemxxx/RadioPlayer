@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:id="@+id/player1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+               
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Player Radiocicletta" />
+		
+		        <Button
+		            android:id="@+id/button1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Play" />
+		
+		    </LinearLayout>
+            <TextView 
+                android:id="@+id/textview2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:text="this is another tab" />
+            <TextView 
+                android:id="@+id/textview3"
+                android:background="#FFFFFF"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:text="this is a third tab" />
+            <TextView 
+                android:id="@+id/textview4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:text="this is a third tab" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
